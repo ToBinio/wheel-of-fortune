@@ -1,3 +1,5 @@
 export interface Word {
-    value: string
+  value: string,
+  color: string,
+  size: number
 }

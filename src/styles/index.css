@@ -1,0 +1,59 @@
+@keyframes fadeIn {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        top: -50px;
+        opacity: 0;
+    }
+}
+
+.winner-enter, .winner-enter-to {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+
+    animation-timing-function: ease-out;
+}
+
+.winner-exit, .winner-exit-to {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+
+    animation-timing-function: ease-in;
+}
+
+
+#winner {
+    position: absolute;
+
+    font-size: xxx-large;
+
+    top: 0;
+    left: 50%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+canvas {
+    width: 100%;
+    max-width: 600px;
+
+    image-rendering: optimizeQuality;
+}
